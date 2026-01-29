@@ -1,9 +1,16 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+
+import Register from "./pages/Register"
+
 
 function App() {
   return (
-    <h1 className="text-5xl text-red-500 font-bold">
-      Tailwind v4 
-    </h1>
+   <Router>
+      <Routes>    
+        <Route path="/register" Component={Register}></Route>
+      </Routes>
+    </Router>
   )
 }
 
